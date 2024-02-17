@@ -13,62 +13,101 @@
     <!-- inter and raleway font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!-- custom style -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- custom tailwind color add -->
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                primaryColor: '#1DD100',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        primaryColor: '#1DD100',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 
 </head>
 
 <body>
 
     <!-- header start -->
-    <header class="max-w-[1500px] w-[85%] mx-auto">
+    <header class="max-w-[1500px] w-[95%] lg:w-[85%] mx-auto">
         <!-- nav start -->
         <nav>
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a class="text-lg font-medium text-[#030712B3]">Home</a></li>
+                            <li><a class="text-lg font-medium text-[#030712B3]">About</a></li>
+                            <li><a class="text-lg font-medium text-[#030712B3]">Destination</a></li>
+                            <li><a class="text-lg font-medium text-[#030712B3]">Search</a></li>
+                        </ul>
                     </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <a href="./index.html" class="text-2xl md:text-3xl font-extrabold raleway flex">B-<span
+                            class="text-primaryColor">Ticket </span> <span class="hidden md:flex">Hub</span></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
                         <li><a class="text-lg font-medium text-[#030712B3]">Home</a></li>
                         <li><a class="text-lg font-medium text-[#030712B3]">About</a></li>
                         <li><a class="text-lg font-medium text-[#030712B3]">Destination</a></li>
                         <li><a class="text-lg font-medium text-[#030712B3]">Search</a></li>
                     </ul>
-                  </div>
-                  <a href="./index.html" class="text-2xl md:text-3xl font-extrabold raleway flex">B-<span class="text-primaryColor">Ticket </span>  <span class="hidden md:flex">Hub</span></a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li><a class="text-lg font-medium text-[#030712B3]">Home</a></li>
-                    <li><a class="text-lg font-medium text-[#030712B3]">About</a></li>
-                    <li><a class="text-lg font-medium text-[#030712B3]">Destination</a></li>
-                    <li><a class="text-lg font-medium text-[#030712B3]">Search</a></li>
-                  </ul>
                 </div>
                 <div class="navbar-end">
-                  <a class="btn text-primaryColor text-xl font-bold border border-[#1DD100] bg-[#1DD1001A]">Bus <img src="./images/bus-icon.png"></a>
+                    <a class="btn text-primaryColor text-xl font-bold border border-[#1DD100] bg-[#1DD1001A]">Bus <img
+                            src="./images/bus-icon.png"></a>
                 </div>
-              </div>
+            </div>
         </nav>
         <!-- nav end -->
         <!-- banner start -->
         <div class="banner">
-
+            <div class="bg-[url('./images/banner.png')] bg-cover bg-center p-6 lg:py-28 lg:px-32 text-center rounded-3xl space-y-8">
+                <h1 class="raleway text-6xl font-extrabold text-white">End-to-End Travel with <br><span
+                        class="text-primaryColor">Hublu Paribahan</span></h1>
+                <p class="max-w-[691px] mx-auto inter text-lg font-normal text-white">Yes, you can run unit tests and
+                    view the results directly within the app. The integrated testing features allow for a streamlined .
+                </p>
+                <button class="btn bg-primaryColor border-none outline-none text-xl font-bold raleway px-7">Buy
+                    Tickets</button>
+            </div>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-5 inter md:-mt-16">
+                <div class="flex justify-center items-center gap-4 bg-white p-8 rounded-3xl border-b-4 border-primaryColor">
+                    <div><img src="./images/people.png" alt=""></div>
+                    <div class="text-left">
+                        <h1 class="text-4xl font-bold">500K+</h1>
+                        <p class="text-[#03071299] text-lg font-normal">Registered users</p>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center gap-4 bg-white p-8 rounded-3xl border-b-4 border-primaryColor">
+                    <div><img src="./images/ticket-cupon.png" alt=""></div>
+                    <div class="text-left">
+                        <h1 class="text-4xl font-bold">1.7 lacks</h1>
+                        <p class="text-[#03071299] text-lg font-normal">Tickets sold</p>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center gap-4 bg-white p-8 rounded-3xl border-b-4 border-primaryColor">
+                    <div><img src="./images/stoppage.png" alt=""></div>
+                    <div class="text-left">
+                        <h1 class="text-4xl font-bold">80K+</h1>
+                        <p class="text-[#03071299] text-lg font-normal">Rental partners</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- banner end -->
     </header>
