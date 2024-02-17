@@ -145,7 +145,7 @@
                     </div>
                     <img src="./images/divider1.svg" alt="">
                     <div class="raleway space-y-3 pr-3 md:ps-6">
-                        <h1 class="text-2xl md:text-3xl font-bold">Couple 20</h1>
+                        <h1 class="text-2xl md:text-3xl font-bold">Couple20</h1>
                         <p class="text-[#03071266]">Coupon Code</p>
                     </div>
                 </div>
@@ -299,16 +299,17 @@
                                 
                             </div>
                             <hr class="my-4">
-                            <div class="flex justify-between text-base font-medium">
-                                <p>Total Price</p>
-                                <p>BDT <span id="total-Price">0</span></p>
+                            <div id="totalPriceAndDisPriceContainer" class="space-y-3">
+                                <div class="flex justify-between text-base font-medium">
+                                    <p>Total Price</p>
+                                    <p>BDT <span id="total-Price">0</span></p>
+                                </div>
                             </div>
                             <div class="flex justify-center items-center my-4">
                                 <div class="md:join">
-                                    <input type="text" class="input md:input-bordered md:join-item"
+                                    <input id="couponInput" type="text" class="input md:input-bordered md:join-item"
                                         placeholder="Have any copupon?" />
-                                    <button
-                                        class="btn md:join-item md:rounded-r-full bg-primaryColor font-semibold text-base text-white hover:text-black" disabled>Apply</button>
+                                    <button id="couponBtn" class="btn md:join-item md:rounded-r-full bg-primaryColor font-semibold text-base text-white hover:text-black" disabled>Apply</button>
                                 </div>
                             </div>
                             <div class="flex justify-between text-base font-medium">
@@ -319,21 +320,20 @@
                         <div class="mt-5 space-y-4">
                             <div class="space-y-3">
                                 <label class="font-semibold text-base">Passenger Name*</label> <br>
-                                <input type="text" class="input input-bordered w-full" placeholder="Enter your name">
+                                <input id="userName" type="text" class="input input-bordered w-full" placeholder="Enter your name">
                             </div>
                             <div class="space-y-3">
                                 <label class="font-semibold text-base">Phone Number*</label> <br>
-                                <input type="number" class="input input-bordered w-full"
-                                    placeholder="Enter your phone number">
+                                <input id="phoneNumber" type="number" class="input input-bordered w-full"
+                                    placeholder="Enter your 11 digit phone number">
                             </div>
                             <div class="space-y-3">
                                 <label class="font-semibold text-base">Email ID</label> <br>
-                                <input type="email" class="input input-bordered w-full"
+                                <input id="email" type="email" class="input input-bordered w-full"
                                     placeholder="Enter your email id">
                             </div>
                             <div class="space-y-3">
-                                <button
-                                    class="w-full btn text-xl font-extrabold text-white hover:text-black bg-primaryColor" disabled>Next</button>
+                                <button id="contactNextBtn" class="w-full btn text-xl font-extrabold text-white hover:text-black bg-primaryColor" disabled>Next</button>
                             </div>
                             <div
                                 class="flex flex-col md:flex-row items-center justify-center md:justify-evenly text-base font-normal underline text-[#03071299]">

@@ -8,6 +8,7 @@ const NewBgColors = "bg-primaryColor";
 // used loop in all single sheet
 let count = 0;
 let ticketName = "";
+
 // loops start
 for (const sheet of allBusSheets) {
   sheet.addEventListener("click", (e) => {
@@ -55,12 +56,78 @@ for (const sheet of allBusSheets) {
     // set dynamic value
     setValueById("totalSheetsSpace", sheetSpace);
     setValueById("sheetBookingCount", sheetBooking);
-    setHtmlTempleteById("booking-sheet", sheetName, sheetFree);
+    setSheetAndPriceById("booking-sheet", sheetName, sheetFree);
     setValueById("total-Price", totalPrice + sheetFree);
-    setValueById("grand-Price", totalPrice + sheetFree);
+    setValueById("grand-Price", grandPrice + sheetFree);
 
     // counting
     count++;
+
+    // coupon btn enable
+    if (getStringToNumberById("sheetBookingCount") === 4) {
+      document.getElementById("couponBtn").removeAttribute("disabled");
+    }
   });
 }
 // loops end
+
+// coupon input validation
+const couponBtn = document.getElementById("couponBtn");
+couponBtn.addEventListener("click", () => {
+  const couponInput = document.getElementById("couponInput");
+  if (couponInput.value === "NEW15") {
+    const totalPrice = getStringToNumberById("total-Price");
+    const discount = (totalPrice * 15) / 100;
+    const newPrice = totalPrice - discount;
+    setDiscountPriceById("totalPriceAndDisPriceContainer", discount);
+    setValueById("grand-Price", newPrice);
+    document.getElementById("couponBtn").setAttribute("disabled", true);
+    couponInput.value = "";
+  } else if (couponInput.value === "Couple20") {
+    const totalPrice = getStringToNumberById("total-Price");
+    const discount = (totalPrice * 20) / 100;
+    const newPrice = totalPrice - discount;
+    setDiscountPriceById("totalPriceAndDisPriceContainer", discount);
+    setValueById("grand-Price", newPrice);
+    document.getElementById("couponBtn").setAttribute("disabled", true);
+    couponInput.value = "";
+  } else {
+    Swal.fire({
+      icon: "error",
+      title: "Sorry!",
+      text: "Coupon code invalid!",
+    });
+  }
+});
+
+// contact form validation
+const phoneNumber = document.getElementById('phoneNumber');
+phoneNumber.addEventListener('keyup', (e)=>{
+    const sheetBookingCount = getStringToNumberById('sheetBookingCount');
+    if (e.target.value.length === 11 && sheetBookingCount > 0) {
+        document.getElementById('contactNextBtn').removeAttribute('disabled');
+    }else{
+        document.getElementById('contactNextBtn').setAttribute('disabled', true);
+    }
+});
+
+// contactNextBtn click and finish
+
+const contactNextBtn = document.getElementById('contactNextBtn');
+contactNextBtn.addEventListener('click', ()=>{
+    const userName = document.getElementById('userName');
+    const email = document.getElementById('email');
+    if (userName.value !== "" && email.value !== "") {
+        
+
+        // next day
+
+
+    }else{
+        Swal.fire({
+            icon: "error",
+            title: "Sorry!",
+            text: "Name or Email invalid!",
+          });
+    }
+});
