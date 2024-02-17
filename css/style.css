@@ -1,6 +1,13 @@
-.inter{
+.inter {
     font-family: "Inter", sans-serif;
 }
-.raleway{
+
+.raleway {
     font-family: "Raleway", sans-serif;
+}
+
+#TicketCounter {
+    border-radius: 88px 88px 0px 0px;
+    border-top: 2px solid #1DD100;
+    background: #F7F8F8;
 }
