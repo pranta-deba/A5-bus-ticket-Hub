@@ -4,7 +4,6 @@
     - best offer section
     - ticket section
 
-
 # Optional : 
 
     - banner . user register count, sold count, partner count card.
