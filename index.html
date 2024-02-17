@@ -79,7 +79,7 @@
         <div class="banner">
             <div
                 class="bg-[url('./images/banner.png')] bg-cover bg-center p-6 lg:py-28 lg:px-32 text-center rounded-3xl space-y-8">
-                <h1 class="raleway text-6xl font-extrabold text-white">End-to-End Travel with <br><span
+                <h1 class="raleway text-4xl md:text-6xl font-extrabold text-white">End-to-End Travel with <br><span
                         class="text-primaryColor">Hublu Paribahan</span></h1>
                 <p class="max-w-[691px] mx-auto inter text-lg font-normal text-white">Yes, you can run unit tests and
                     view the results directly within the app. The integrated testing features allow for a streamlined .
@@ -158,16 +158,14 @@
         <!-- paribahan section start-->
         <section id="TicketCounter" class="py-6 md:py-24 border-t-4 border-primaryColor">
             <div class="max-w-[1500px] w-[95%] lg:w-[90%] mx-auto">
-
                 <div class="text-center space-y-5 mb-10">
                     <h1 class="raleway text-4xl font-bold">Hublu Paribahan</h1>
                     <p class="inter max-w-[737px] mx-auto text-[#03071299] text-lg font-normal">Yes, you can run unit
                         tests and view the results directly within the app. The integrated testing features allow for a
                         streamlined .</p>
                 </div>
-
                 <div class="flex flex-col md:flex-row justify-center items-center bg-white rounded-3xl">
-                    <div class="flex-1  md:border-r-4 border-dotted border-[#1DD100] p-3 md:py-6  md:px-10">
+                    <div class="flex-1 p-3 md:py-6  md:px-10">
                         <div class="flex flex-col lg:flex-row items-center justify-between gap-3">
                             <div class="flex flex-col justify-center items-center md:flex-row gap-4">
                                 <div><img src="./images/bus-logo.png" alt=""></div>
@@ -177,8 +175,7 @@
                                 </div>
                             </div>
                             <div>
-                                <button
-                                    class="btn text-primaryColor text-xl font-bold bg-[#1DD1001A]">
+                                <button class="btn text-primaryColor text-xl font-bold bg-[#1DD1001A]">
                                     <img src="./images/seat-green-filled.png">40 Seats left</button>
                             </div>
                         </div>
@@ -193,12 +190,18 @@
                                 <p class="text-lg font-semibold">9:00 PM</p>
                             </div>
                             <hr>
-                            <div class="flex flex-col justify-evenly gap-6 my-3 inter">
-                                <p class="text-base font-medium bg-[#0307120D] p-5 rounded-xl">Boarding Point - Laxmipur</p>
-                                <p class="text-base font-medium bg-[#0307120D] p-5 rounded-xl">Boarding Point - Laxmipur</p>
-                                <p class="text-base font-medium bg-[#0307120D] p-5 rounded-xl">Boarding Point - Laxmipur</p>
+                            <div class="flex flex-col md:flex-row justify-evenly gap-6 my-3 inter">
+                                <p class="text-base font-medium bg-[#0307120D] p-5 rounded-xl cursor-pointer">Boarding
+                                    Point - Laxmipur</p>
+                                <p class="text-base font-medium bg-[#0307120D] p-5 rounded-xl cursor-pointer">Boarding
+                                    Point - Laxmipur</p>
+                                <p class="text-base font-medium bg-[#0307120D] p-5 rounded-xl cursor-pointer">Boarding
+                                    Point - Laxmipur</p>
                             </div>
                         </div>
+                    </div>
+                    <div class="hidden md:flex">
+                        <img src="./images/info-devider.png" alt="">
                     </div>
                     <div class="lg:w-[400px] py-6 px-10 flex flex-col justify-center items-center">
                         <div><img src="./images/fare.png" alt=""></div>
@@ -208,12 +211,233 @@
                         </div>
                     </div>
                 </div>
-
+                <div class="flex flex-col lg:flex-row justify-center bg-white rounded-3xl mt-7 p-7">
+                    <div class="flex-1 border-dotted lg:border-r-2 border-slate-300 md:px-7">
+                        <div>
+                            <p class="text-2xl font-semibold raleway mb-4">Select Your Seat</p>
+                            <hr>
+                            <div class="flex justify-between text-lg font-medium inter my-3">
+                                <p class="flex justify-center items-center gap-2"><img src="./images/seat-gray.png"
+                                        alt="">Available</p>
+                                <p class="flex justify-center items-center gap-2"><img
+                                        src="./images/seat-green-filled.png" alt="">Selected</p>
+                            </div>
+                            <hr>
+                            <div class="flex justify-end my-6">
+                                <p class="px-8 py-3 bg-[#0307121A] rounded-xl "><img src="./images/cakka.svg" alt="">
+                                </p>
+                            </div>
+                            <div class="grid grid-cols-5 gap-3 text-[#03071280] text-lg font-medium">
+                                <div class="text-center rounded-xl py-3">A</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    A1</div>
+                                <div
+                                    class="bus-sheat bg-primaryColor text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    A2</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    A3</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    A4</div>
+                                <div class="text-center rounded-xl py-3">B</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    B1</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    B2</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    B3</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    B4</div>
+                                <div class="text-center rounded-xl py-3">C</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    C1</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    C2</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    C3</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    C4</div>
+                                <div class="text-center rounded-xl py-3">D</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    D1</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    D2</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    D3</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    D4</div>
+                                <div class="text-center rounded-xl py-3">E</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    E1</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    E2</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    E3</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    E4</div>
+                                <div class="text-center rounded-xl py-3">F</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    F1</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    F2</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    F3</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    F4</div>
+                                <div class="text-center rounded-xl py-3">G</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    G1</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    G2</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    G3</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    G4</div>
+                                <div class="text-center rounded-xl py-3">H</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    H1</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    H2</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    H3</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    H4</div>
+                                <div class="text-center rounded-xl py-3">I</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    I1</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    I2</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    I3</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    I4</div>
+                                <div class="text-center rounded-xl py-3">J</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    J1</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    J2</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    J3</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
+                                    J4</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-1 md:px-7 inter">
+                        <div>
+                            <p class="text-2xl font-semibold raleway my-4">Select Your Seat</p>
+                            <hr>
+                        </div>
+                        <div class="bg-[#F7F8F8] p-7 mt-5 rounded-xl">
+                            <div class="flex gap-4 text-base font-medium">
+                                <p class="flex-1">Seat <span
+                                        class="text-xs font-bold bg-primaryColor py-1 px-2 text-white rounded-3xl">2</span>
+                                </p>
+                                <p class="flex-1">Class</p>
+                                <p>Price</p>
+                            </div>
+                            <hr class="my-4">
+                            <div id="booking-sheat">
+                                <div class="flex gap-4 py-1 inter text-[#03071299] text-base font-medium">
+                                    <p class="flex-1">C2</p>
+                                    <p class="flex-1">Economoy</p>
+                                    <p>550</p>
+                                </div>
+                                <div class="flex gap-4 py-1 inter text-[#03071299] text-base font-medium">
+                                    <p class="flex-1">C2</p>
+                                    <p class="flex-1">Economoy</p>
+                                    <p>550</p>
+                                </div>
+                            </div>
+                            <hr class="my-4">
+                            <div class="flex justify-between text-base font-medium">
+                                <p>Total Price</p>
+                                <p>BDT <span id="total-Price">1100</span></p>
+                            </div>
+                            <div class="flex justify-center items-center my-4">
+                                <div class="md:join">
+                                    <input type="text" class="input md:input-bordered md:join-item"
+                                        placeholder="Have any copupon?" />
+                                    <button
+                                        class="btn md:join-item md:rounded-r-full bg-primaryColor font-semibold text-base text-white hover:text-black">Apply</button>
+                                </div>
+                            </div>
+                            <div class="flex justify-between text-base font-medium">
+                                <p>Grand Total</p>
+                                <p>BDT <span id="total-Price">1100</span></p>
+                            </div>
+                        </div>
+                        <div class="mt-5 space-y-4">
+                            <div class="space-y-3">
+                                <label class="font-semibold text-base">Passenger Name*</label> <br>
+                                <input type="text" class="input input-bordered w-full" placeholder="Enter your name">
+                            </div>
+                            <div class="space-y-3">
+                                <label class="font-semibold text-base">Phone Number*</label> <br>
+                                <input type="number" class="input input-bordered w-full"
+                                    placeholder="Enter your phone number">
+                            </div>
+                            <div class="space-y-3">
+                                <label class="font-semibold text-base">Email ID</label> <br>
+                                <input type="email" class="input input-bordered w-full"
+                                    placeholder="Enter your email id">
+                            </div>
+                            <div class="space-y-3">
+                                <button
+                                    class="w-full btn text-xl font-extrabold text-white hover:text-black bg-primaryColor">Next</button>
+                            </div>
+                            <div
+                                class="flex flex-col md:flex-row items-center justify-center md:justify-evenly text-base font-normal underline text-[#03071299]">
+                                <p class="cursor-pointer">Terms and Conditions</p>
+                                <p class="cursor-pointer">Cancellation Policy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- paribahan section end-->
     </main>
     <!-- main end -->
+
+    <!-- footer start -->
+    <footer class="bg-[#030712] py-5 md:py-20">
+        <div class="max-w-[1500px] w-[95%] lg:w-[90%] mx-auto">
+            <div class="footer items-center text-neutral-content border-dotted border-b-2 border-[#FFFFFF4D] pb-10">
+                <aside class="items-center grid-flow-col">
+                    <div class="space-y-4">
+                        <h1 class="text-4xl font-extrabold raleway">B-TicketHub</h1>
+                        <p class="text=[#FFFFFFCC] text-lg font-normal inter">B-TicketHub is a digital platform to make
+                            your <br> daily commuting better.</p>
+                    </div>
+                </aside>
+                <nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+                    <div class="md:text-right space-y-4">
+                        <p class="text-xl font-semibold raleway">Download our app</p>
+                        <p class="cursor-pointer"><img src="./images/Group104.png" alt=""></p>
+                    </div>
+                </nav>
+            </div>
+            <div class="mt-7 inter">
+                <div class="footer items-center text-neutral-content">
+                    <aside class="items-center grid-flow-col">
+                        <div class="space-y-4">
+                            <p class="text=[#FFFFFFB2] text-lg font-normal">@all rights reserved,  B-TicketHub services limited.2024</p>
+                        </div>
+                    </aside>
+                    <nav class="grid-flow-col gap-4 items-center justify-center md:place-self-center md:justify-self-end">
+                        <div class="md:text-right md:space-y-4">
+                            <ul class="flex flex-col md:flex-row md:gap-7 text-base font-medium w-full mx-auto">
+                                <li class="cursor-pointer">Terms & condition</li>
+                                <li class="cursor-pointer">Return & refund policy</li>
+                                <li class="cursor-pointer">Privacy policy</li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div> 
+        </div>
+    </footer>
+    <!-- footer end -->
 
 
 
