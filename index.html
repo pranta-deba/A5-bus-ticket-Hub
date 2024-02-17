@@ -84,8 +84,9 @@
                 <p class="max-w-[691px] mx-auto inter text-lg font-normal text-white">Yes, you can run unit tests and
                     view the results directly within the app. The integrated testing features allow for a streamlined .
                 </p>
-                <button class="btn bg-primaryColor border-none outline-none text-xl font-bold raleway px-7">Buy
-                    Tickets</button>
+                <a href="#TicketCounter"
+                    class="btn bg-primaryColor border-none outline-none text-xl font-bold raleway px-7">Buy
+                    Tickets</a>
             </div>
             <div class="flex flex-col md:flex-row justify-center items-center gap-5 inter md:-mt-16">
                 <div
@@ -176,7 +177,7 @@
                             </div>
                             <div>
                                 <button class="btn text-primaryColor text-xl font-bold bg-[#1DD1001A]">
-                                    <img src="./images/seat-green-filled.png">40 Seats left</button>
+                                    <img src="./images/seat-green-filled.png"><span id="totalSheetsSpace">40</span> Seats left</button>
                             </div>
                         </div>
                         <div class="p-3 md:p-8 bg-[#F7F8F8] rounded-3xl mt-6">
@@ -206,7 +207,7 @@
                     <div class="lg:w-[400px] py-6 px-10 flex flex-col justify-center items-center">
                         <div><img src="./images/fare.png" alt=""></div>
                         <div class="raleway text-center">
-                            <h1 class="text-3xl font-bold">550 Taka</h1>
+                            <h1 class="text-3xl font-bold"><span id="sheetFree">550</span> Taka</h1>
                             <p class="text-2xl font-semibold text-[#03071299]">Per Seat</p>
                         </div>
                     </div>
@@ -229,96 +230,55 @@
                             </div>
                             <div class="grid grid-cols-5 gap-3 text-[#03071280] text-lg font-medium">
                                 <div class="text-center rounded-xl py-3">A</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    A1</div>
-                                <div
-                                    class="bus-sheat bg-primaryColor text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    A2</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    A3</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    A4</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">A1</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">A2</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">A3</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">A4</div>
                                 <div class="text-center rounded-xl py-3">B</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    B1</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    B2</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    B3</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    B4</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">B1</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">B2</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">B3</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">B4</div>
                                 <div class="text-center rounded-xl py-3">C</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    C1</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    C2</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    C3</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    C4</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">C1</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">C2</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">C3</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">C4</div>
                                 <div class="text-center rounded-xl py-3">D</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    D1</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    D2</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    D3</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    D4</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">D1</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">D2</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">D3</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">D4</div>
                                 <div class="text-center rounded-xl py-3">E</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    E1</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    E2</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    E3</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    E4</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">E1</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">E2</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">E3</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">E4</div>
                                 <div class="text-center rounded-xl py-3">F</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    F1</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    F2</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    F3</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    F4</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">F1</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">F2</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">F3</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">F4</div>
                                 <div class="text-center rounded-xl py-3">G</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    G1</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    G2</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    G3</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    G4</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">G1</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">G2</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">G3</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">G4</div>
                                 <div class="text-center rounded-xl py-3">H</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    H1</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    H2</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    H3</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    H4</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">H1</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">H2</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">H3</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">H4</div>
                                 <div class="text-center rounded-xl py-3">I</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    I1</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    I2</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    I3</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    I4</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">I1</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">I2</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">I3</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">I4</div>
                                 <div class="text-center rounded-xl py-3">J</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    J1</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    J2</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    J3</div>
-                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">
-                                    J4</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">J1</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">J2</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">J3</div>
+                                <div class="bus-sheat bg-[#F7F8F8] text-center rounded-xl md:px-8 py-3 cursor-pointer">J4</div>
                             </div>
                         </div>
                     </div>
@@ -329,41 +289,31 @@
                         </div>
                         <div class="bg-[#F7F8F8] p-7 mt-5 rounded-xl">
                             <div class="flex gap-4 text-base font-medium">
-                                <p class="flex-1">Seat <span
-                                        class="text-xs font-bold bg-primaryColor py-1 px-2 text-white rounded-3xl">2</span>
+                                <p class="flex-1">Seat <span id="sheetBookingCount" class="text-xs font-bold bg-primaryColor py-1 px-2 text-white rounded-3xl">0</span>
                                 </p>
                                 <p class="flex-1">Class</p>
                                 <p>Price</p>
                             </div>
                             <hr class="my-4">
-                            <div id="booking-sheat">
-                                <div class="flex gap-4 py-1 inter text-[#03071299] text-base font-medium">
-                                    <p class="flex-1">C2</p>
-                                    <p class="flex-1">Economoy</p>
-                                    <p>550</p>
-                                </div>
-                                <div class="flex gap-4 py-1 inter text-[#03071299] text-base font-medium">
-                                    <p class="flex-1">C2</p>
-                                    <p class="flex-1">Economoy</p>
-                                    <p>550</p>
-                                </div>
+                            <div id="booking-sheet">
+                                
                             </div>
                             <hr class="my-4">
                             <div class="flex justify-between text-base font-medium">
                                 <p>Total Price</p>
-                                <p>BDT <span id="total-Price">1100</span></p>
+                                <p>BDT <span id="total-Price">0</span></p>
                             </div>
                             <div class="flex justify-center items-center my-4">
                                 <div class="md:join">
                                     <input type="text" class="input md:input-bordered md:join-item"
                                         placeholder="Have any copupon?" />
                                     <button
-                                        class="btn md:join-item md:rounded-r-full bg-primaryColor font-semibold text-base text-white hover:text-black">Apply</button>
+                                        class="btn md:join-item md:rounded-r-full bg-primaryColor font-semibold text-base text-white hover:text-black" disabled>Apply</button>
                                 </div>
                             </div>
                             <div class="flex justify-between text-base font-medium">
                                 <p>Grand Total</p>
-                                <p>BDT <span id="total-Price">1100</span></p>
+                                <p>BDT <span id="grand-Price">0</span></p>
                             </div>
                         </div>
                         <div class="mt-5 space-y-4">
@@ -383,7 +333,7 @@
                             </div>
                             <div class="space-y-3">
                                 <button
-                                    class="w-full btn text-xl font-extrabold text-white hover:text-black bg-primaryColor">Next</button>
+                                    class="w-full btn text-xl font-extrabold text-white hover:text-black bg-primaryColor" disabled>Next</button>
                             </div>
                             <div
                                 class="flex flex-col md:flex-row items-center justify-center md:justify-evenly text-base font-normal underline text-[#03071299]">
@@ -421,10 +371,12 @@
                 <div class="footer items-center text-neutral-content">
                     <aside class="items-center grid-flow-col">
                         <div class="space-y-4">
-                            <p class="text=[#FFFFFFB2] text-lg font-normal">@all rights reserved,  B-TicketHub services limited.2024</p>
+                            <p class="text=[#FFFFFFB2] text-lg font-normal">@all rights reserved, B-TicketHub services
+                                limited.2024</p>
                         </div>
                     </aside>
-                    <nav class="grid-flow-col gap-4 items-center justify-center md:place-self-center md:justify-self-end">
+                    <nav
+                        class="grid-flow-col gap-4 items-center justify-center md:place-self-center md:justify-self-end">
                         <div class="md:text-right md:space-y-4">
                             <ul class="flex flex-col md:flex-row md:gap-7 text-base font-medium w-full mx-auto">
                                 <li class="cursor-pointer">Terms & condition</li>
@@ -434,19 +386,13 @@
                         </div>
                     </nav>
                 </div>
-            </div> 
+            </div>
         </div>
     </footer>
     <!-- footer end -->
 
 
-
-
-
-
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/utility.js"></script>
     <script src="./js/app.js"></script>
 </body>
