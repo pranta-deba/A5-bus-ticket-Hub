@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bus Ticket Hub</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/bus-icon.png" type="image/x-icon">
     <!-- Tailwind & DaisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -14,11 +16,68 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- custom style -->
     <link rel="stylesheet" href="./css/style.css">
-        
+    <!-- custom tailwind color add -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primaryColor: '#1DD100',
+              }
+            }
+          }
+        }
+      </script>
 
 </head>
 
 <body>
+
+    <!-- header start -->
+    <header class="max-w-[1500px] w-[85%] mx-auto">
+        <!-- nav start -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a class="text-lg font-medium text-[#030712B3]">Home</a></li>
+                        <li><a class="text-lg font-medium text-[#030712B3]">About</a></li>
+                        <li><a class="text-lg font-medium text-[#030712B3]">Destination</a></li>
+                        <li><a class="text-lg font-medium text-[#030712B3]">Search</a></li>
+                    </ul>
+                  </div>
+                  <a href="./index.html" class="text-2xl md:text-3xl font-extrabold raleway flex">B-<span class="text-primaryColor">Ticket </span>  <span class="hidden md:flex">Hub</span></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a class="text-lg font-medium text-[#030712B3]">Home</a></li>
+                    <li><a class="text-lg font-medium text-[#030712B3]">About</a></li>
+                    <li><a class="text-lg font-medium text-[#030712B3]">Destination</a></li>
+                    <li><a class="text-lg font-medium text-[#030712B3]">Search</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn text-primaryColor text-xl font-bold border border-[#1DD100] bg-[#1DD1001A]">Bus <img src="./images/bus-icon.png"></a>
+                </div>
+              </div>
+        </nav>
+        <!-- nav end -->
+        <!-- banner start -->
+        <div class="banner">
+
+        </div>
+        <!-- banner end -->
+    </header>
+    <!-- header end -->
+
+
+
+
+
 
 
 
