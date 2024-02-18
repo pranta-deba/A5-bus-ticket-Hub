@@ -79,7 +79,12 @@ couponBtn.addEventListener("click", () => {
     const totalPrice = getStringToNumberById("total-Price");
     const discount = (totalPrice * 15) / 100;
     const newPrice = totalPrice - discount;
-    setDiscountPriceById("totalPriceAndDisPriceContainer", discount);
+    setDiscountPriceById(
+      "totalPriceAndDisPriceContainer",
+      discount,
+      "NEW15",
+      15
+    );
     setValueById("grand-Price", newPrice);
     document.getElementById("couponBtn").setAttribute("disabled", true);
     couponInput.value = "";
@@ -87,7 +92,12 @@ couponBtn.addEventListener("click", () => {
     const totalPrice = getStringToNumberById("total-Price");
     const discount = (totalPrice * 20) / 100;
     const newPrice = totalPrice - discount;
-    setDiscountPriceById("totalPriceAndDisPriceContainer", discount);
+    setDiscountPriceById(
+      "totalPriceAndDisPriceContainer",
+      discount,
+      "Couple20",
+      20
+    );
     setValueById("grand-Price", newPrice);
     document.getElementById("couponBtn").setAttribute("disabled", true);
     couponInput.value = "";
@@ -101,33 +111,35 @@ couponBtn.addEventListener("click", () => {
 });
 
 // contact form validation
-const phoneNumber = document.getElementById('phoneNumber');
-phoneNumber.addEventListener('keyup', (e)=>{
-    const sheetBookingCount = getStringToNumberById('sheetBookingCount');
-    if (e.target.value.length === 11 && sheetBookingCount > 0) {
-        document.getElementById('contactNextBtn').removeAttribute('disabled');
-    }else{
-        document.getElementById('contactNextBtn').setAttribute('disabled', true);
-    }
+const phoneNumber = document.getElementById("phoneNumber");
+phoneNumber.addEventListener("keyup", (e) => {
+  const sheetBookingCount = getStringToNumberById("sheetBookingCount");
+  if (e.target.value.length === 11 && sheetBookingCount > 0) {
+    document.getElementById("contactNextBtn").removeAttribute("disabled");
+  } else {
+    document.getElementById("contactNextBtn").setAttribute("disabled", true);
+  }
 });
 
 // contactNextBtn click and finish
+const contactNextBtn = document.getElementById("contactNextBtn");
+contactNextBtn.addEventListener("click", () => {
+  const userName = document.getElementById("userName");
+  const email = document.getElementById("email");
+  if (userName.value !== "" && email.value !== "") {
+    const my_modal_5 = document.getElementById('my_modal_5');
+    my_modal_5.showModal()
+  } else {
+    Swal.fire({
+      icon: "error",
+      title: "Sorry!",
+      text: "Name or Email invalid!",
+    });
+  }
+});
 
-const contactNextBtn = document.getElementById('contactNextBtn');
-contactNextBtn.addEventListener('click', ()=>{
-    const userName = document.getElementById('userName');
-    const email = document.getElementById('email');
-    if (userName.value !== "" && email.value !== "") {
-        
-
-        // next day
-
-
-    }else{
-        Swal.fire({
-            icon: "error",
-            title: "Sorry!",
-            text: "Name or Email invalid!",
-          });
-    }
+// modal Continue Btn click 
+const modalContinueBtn = document.getElementById('modalContinueBtn');
+modalContinueBtn.addEventListener('click', ()=>{
+  window.location.reload();
 });

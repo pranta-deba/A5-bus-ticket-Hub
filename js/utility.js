@@ -15,10 +15,10 @@ function setSheetAndPriceById(id, name, price) {
   document.getElementById(id).innerHTML += template;
 }
 
-function setDiscountPriceById(id, price) {
+function setDiscountPriceById(id, price, couponCode, discount) {
   const template = `<div class="flex justify-between text-base font-medium">
-                        <p>Discount Price</p>
-                        <p>BDT <span>${price}</span></p>
-                    </div>`;
+                      <p>Discount Price <span class="text-xs text-primaryColor"> (${couponCode}) ${discount}% off</span></p>
+                      <p>BDT <span>${price}</span></p>
+                  </div>`;
   document.getElementById(id).innerHTML += template;
 }
