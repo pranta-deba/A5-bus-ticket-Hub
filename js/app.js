@@ -7,13 +7,13 @@ const NewBgColors = "bg-primaryColor";
 
 // used loop in all single sheet
 let count = 0;
-let ticketName = "";
+let ticketName = [];
 
 // loops start
 for (const sheet of allBusSheets) {
   sheet.addEventListener("click", (e) => {
     // check double click
-    if (ticketName === e.target.innerText) {
+    if (ticketName.includes(e.target.innerText)) {
       Swal.fire({
         icon: "error",
         title: "Sorry!",
@@ -33,7 +33,7 @@ for (const sheet of allBusSheets) {
 
     // sheet name. sheet free, and sheet class
     const sheetName = e.target.innerText;
-    ticketName = sheetName;
+    ticketName.push(sheetName);
     const sheetFree = getStringToNumberById("sheetFree");
 
     // change bg color
